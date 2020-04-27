@@ -42,11 +42,18 @@ output "subnet_names" {
   value = local.subnet_names
 }
 
-
 output "nsg_names" {
   value = local.nsg_names
 }
 
 output "ddos_protection_plan_names" {
   value = local.ddos_protection_plan_names
+}
+
+output "tags_hub_generic" {
+  value = local.tags_hub_generic
+}
+
+output "tags_subenv" {
+  value = local.tags_subenv
 }
