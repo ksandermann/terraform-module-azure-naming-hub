@@ -37,3 +37,7 @@ output "vnet_names" {
 output "resource_group_names" {
   value = local.resource_group_names
 }
+
+output "subnet_names" {
+  value = local.subnet_names
+}
