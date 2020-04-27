@@ -33,3 +33,7 @@ output "environment" {
 output "vnet_names" {
   value = local.vnet_names
 }
+
+output "resource_group_names" {
+  value = local.resource_group_names
+}
