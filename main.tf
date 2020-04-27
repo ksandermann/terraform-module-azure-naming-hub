@@ -5,7 +5,10 @@ locals {
   environment  = var.environment
 
   resource_group_names = {
-    main = format("%s%s", module.naming-root.resource_basenames["resource_group"], "HUB001")
+    main            = format("%s%s", module.naming-root.resource_basenames["resource_group"], "HUB001")
+    gateway         = format("%s%s", module.naming-root.resource_basenames["resource_group"], "GTW001")
+    shared_services = format("%s%s", module.naming-root.resource_basenames["resource_group"], "SSE001")
+    dmz             = format("%s%s", module.naming-root.resource_basenames["resource_group"], "DMZ001")
   }
 
   vnet_names = {
