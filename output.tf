@@ -41,3 +41,12 @@ output "resource_group_names" {
 output "subnet_names" {
   value = local.subnet_names
 }
+
+
+output "nsg_names" {
+  value = local.nsg_names
+}
+
+output "ddos_protection_plan_names" {
+  value = local.ddos_protection_plan_names
+}
