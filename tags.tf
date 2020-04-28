@@ -18,6 +18,9 @@ locals {
     dmz = merge(local.tags_hub_generic, {
       sub_environment = "dmz"
     })
+    firewall = merge(local.tags_hub_generic, {
+      sub_environment = "firewall"
+    })
 
   }
 }
