@@ -22,8 +22,8 @@ locals {
   subnet_names = {
     gateway         = format("%s%s", local.vnet_names["main"], "GTWSUB001")
     shared_services = format("%s%s", local.vnet_names["main"], "SSESUB001")
-    dmz             = "AzureFirewallSubnet"
-
+    dmz             = format("%s%s", local.vnet_names["main"], "DMZSUB001")
+    firewall        = "AzureFirewallSubnet"
   }
 
   nsg_names = {
@@ -33,7 +33,7 @@ locals {
   }
 
   azure_firewall_names = {
-    dmz = format("%s%s", module.naming-root.resource_basenames["azure_firewall"], "HUB001")
+    dmz = format("%s%s", module.naming-root.resource_basenames["azure_firewall"], "DMZ001")
 
   }
 }
