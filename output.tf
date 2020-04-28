@@ -57,3 +57,7 @@ output "tags_hub_generic" {
 output "tags_subenv" {
   value = local.tags_subenv
 }
+
+output "azure_firewall_names" {
+  value = local.azure_firewall_names
+}
