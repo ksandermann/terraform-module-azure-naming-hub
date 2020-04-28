@@ -9,6 +9,8 @@ locals {
     gateway         = format("%s%s", module.naming-root.resource_basenames["resource_group"], "GTW001")
     shared_services = format("%s%s", module.naming-root.resource_basenames["resource_group"], "SSE001")
     dmz             = format("%s%s", module.naming-root.resource_basenames["resource_group"], "DMZ001")
+    firewall        = format("%s%s", module.naming-root.resource_basenames["resource_group"], "AFW001")
+
   }
 
   vnet_names = {
