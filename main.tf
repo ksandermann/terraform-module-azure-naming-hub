@@ -34,7 +34,7 @@ locals {
   }
 
   azure_firewall_names = {
-    dmz = format("%s%s", module.naming-root.resource_basenames["azure_firewall"], "DMZ001")
+    dmz = format("%s%s", module.naming-root.resource_basenames["azure_firewall"], "HUB001")
 
   }
 }
